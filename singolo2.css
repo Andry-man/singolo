@@ -465,8 +465,16 @@ margin-top: -6px;
 display: block;
 width: 100%;
 background-color:#f2f2f2;
-height: auto;
+height: 132.2vh;
 }
+@media (max-width: 740px) { 
+    .about-us {
+        display: block;
+        width: 100%;
+        background-color:#f2f2f2;
+        height: auto;
+        }
+    }
 .about-us-wrapper {
 height: 100%;
 width: 92.1%;
@@ -583,7 +591,7 @@ padding-top: 3.4px;
 font-family: 'Lato', sans-serif;
 color: #666d89;
 font-size: 0.72em;
-padding-top: 1.6%;
+padding-top: 3.9%;
 font-weight: 100;
 line-height: 1.8;
 letter-spacing: 0.17px;
@@ -612,7 +620,7 @@ padding-top: 3.4px;
 font-family: 'Lato', sans-serif;
 color: #666d89;
 font-size: 0.72em;
-padding-top: 1.6%;
+padding-top: 4.3%;
 font-weight: 100;
 line-height: 1.8;
 letter-spacing: 0.38px;
@@ -624,7 +632,7 @@ margin-left: 3px;
 .tree-person-name {
 width: 100%;
 height: 6%;
-margin-top: 3%;
+margin-top: 3.2%;
 }
 .tree-person_name {
 font-family: 'Lato', sans-serif;
@@ -638,9 +646,9 @@ margin-left: 1.1%;
 font-family: 'Lato', sans-serif;
 color: #666d89;
 font-size: 0.72em;
-padding-top: 2.5%;
+padding-top: 3.7%;
 font-weight: 600;
-margin-left: 0.26px;
+margin-left: 0.22px;
 line-height: 1.8;
 letter-spacing: 0.33px;
 }
