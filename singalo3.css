@@ -1,0 +1,15 @@
+.wrapper {
+width: 85%;
+background-color: #f06c64;
+height: 500px;
+margin: auto;
+}
+.line {
+
+}
+.wrapper-data {
+margin: auto;
+background-color: black;
+height: 300px;
+width: 93%;
+}
