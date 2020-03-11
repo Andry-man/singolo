@@ -7,7 +7,7 @@ const button_contact = document.getElementById('button-contact')
 const main_block = document.getElementById('main_block')
 const html = document.getElementById('html')
 document.documentElement.scrollTop =0;
-menu_navbar.addEventListener('click',(event)=>{ //меняется цвет текста
+menu_navbar.addEventListener('click',(event)=>{ //меняется цвет текстa
     menu_navbar.querySelectorAll('li').forEach(el=>el.classList.remove('activeNav'));
     event.target.classList.add('activeNav');
 
