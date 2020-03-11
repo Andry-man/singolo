@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
     <title>Singolo</title>
 </head>
 <body>
+    
     <div class="wrapper">
         <header class="header">
         <div class="header_container">
@@ -17,17 +18,17 @@
         <a href="index.html" class="link" ><h1 class="text_logo">SINGOLO<span class="text_logo-one">*</span></h1></a>
         </div>
         <nav class="navbar">
-        <ul class="navbar_container">
-        <li class="list-home">home <span class="text_element-1">·</span></li>
-        <li class="list-services">services <span class="text_element-2">·</span></li>
-        <li class="list-portfolio">portfolio <span class="text_element-3">·</span></li>
-        <li class="list-about">about <span class="text_element-4">·</span></li>
-        <li class="list-contact">contact</li>
+        <ul class="navbar_container" id="menu_navbar">
+        <li class="list-home activeNav" id="button-home">home<span class="text_element-1">·</span></li>
+        <li class="list-services" id="button-services">services<span class="text_element-2">·</span></li>
+        <li class="list-portfolio" id="button-portfolio">portfolio<span class="text_element-3">·</span></li>
+        <li class="list-about" id="button-about">about<span class="text_element-4">·</span></li>
+        <li class="list-contact" id="button-contact">contact</li>
         </ul>
         </nav>
         </div>
         </header>
-        <main class="main">
+        <main id="main_block" class="main">
         <div class="left-control"><img class="left_control-img" src="./assets/image/left_control.png" alt="image"></div>
         <div class="main-info">
         <div class="left_mobile-container">
@@ -273,5 +274,6 @@
             </footer>
             <div class="line"></div>
             </div>
+            <script src="script.js"></script>
 </body>
 </html>
