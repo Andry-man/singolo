@@ -10,6 +10,10 @@ const blue_block = document.getElementById('blue_block');
 const left_control = document.getElementById('left-control');
 const right_control = document.getElementById('right-control');
 const main_info = document.getElementById('main-info');
+const button_mob_one = document.getElementById('button-mob_one');
+const img_mob1 = document.getElementById('img_mob1');
+const button_mob_two = document.getElementById('button-mob_two');
+const img_mob2 = document.getElementById('img_mob2');
 document.documentElement.scrollTop =0;
 menu_navbar.addEventListener('click',(event)=>{ //меняется цвет текстa
     menu_navbar.querySelectorAll('li').forEach(el=>el.classList.remove('activeNav'));
@@ -53,8 +57,8 @@ button_about.onclick = function() {
 button_contact.onclick = function() {
     document.documentElement.scrollTop =2704;
 }
-var matrix = [main_info,blue_block]
-left_control.onclick = function() {// при нажатии скролл двигается
+var matrix = [main_info,blue_block];
+left_control.onclick = function() {// при нажатии слайдер двигается
     if (matrix[0] == blue_block ) {
         blue_block.style.transform = 'translate(-835px, 0)'
         main_info.style.transform = 'translate(9925px, 0)'
@@ -81,7 +85,7 @@ left_control.onclick = function() {// при нажатии скролл дви�
       } 
       matrix.reverse()
 }
-right_control.onclick = function() {// при нажатии скролл двигается
+right_control.onclick = function() {// при нажатии слайдер двигается
     if (matrix[0] == blue_block ) {
         blue_block.style.transform = 'translate(1835px, 0)'
         main_info.style.transform = 'translate(-5925px, 0)'
@@ -116,5 +120,23 @@ right_control.onclick = function() {// при нажатии скролл дви
       matrix.reverse()
 }
   
-
-
+let counter = 0 
+button_mob_one.onclick = function() { 
+counter+=1
+if ( counter%2 == true ) {
+ img_mob1.style.opacity = 0;
+}
+if ( counter%2 == false ) {
+img_mob1.style.opacity = 1;
+   }
+}
+let countertwo = 0 
+button_mob_two.onclick = function() { 
+countertwo+=1
+if ( countertwo%2 == true ) {
+img_mob2.style.opacity = 0;
+}
+if ( countertwo%2 == false ) {
+img_mob2.style.opacity = 1;
+   }
+}

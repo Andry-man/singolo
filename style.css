@@ -261,6 +261,24 @@
     padding-left: 0px;
     }
     }
+    .ghost-button {
+    position: absolute;
+    display: block;
+    width: 218px;
+    height: 459px;
+    margin-left: 9px;
+    margin-top: -402px;
+    z-index: 16;
+    }
+.ghost-button-two {
+    position: absolute;
+    display: block;
+    width: 464px;
+    height: 215px;
+    margin-left: 9px;
+    margin-top: -700px;
+    z-index: 16;
+    }
     .img-mob_one {
     position: absolute;
     width: 215.23px;
@@ -319,11 +337,14 @@
     }
     .img-mob_eight {
     height: auto;
+    display: block;
     position: absolute;
     padding-left: 2%;
     padding-top: 1.8%;
     width: 96.7%;
     z-index: 2;
+    opacity: 1;
+    transition: opacity 1.3s;
     }
     .container_img-eight {
     width: 195px;
@@ -404,12 +425,15 @@
     transform: scale(-1, 1) rotate(90deg);
     }
     .img-mob_eight-r {
+    display: initial;
     height: auto;
     z-index: 2;
     transform: rotate(-90deg);
     width: 333px;
     margin-left: -70.1px;
     margin-top: 76.0px;
+    opacity: 1;
+    transition: opacity 1.3s;
     }
     .container_img-eight-r {
     width: 195px;
