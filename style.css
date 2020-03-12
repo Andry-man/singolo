@@ -3,9 +3,12 @@
     overflow-y: scroll;
     }
     .wrapper {
+    z-index: 4;
     width: 1020px;
     height: auto;
     margin: auto;
+    overflow: hidden;
+    position: relative;
     }
     .header {
     width: 75.52%;
@@ -22,12 +25,14 @@
     flex-direction: row;
     }
     .logo {
-    width: 50%;
+        width: 50%;
+    display: contents;
     height: 100%;
     }
     @media (max-width: 530px) { 
     .logo {
-    width: 8%;
+    width: 50%;
+    display: contents;
     height: 100%;
     }
     }
@@ -79,6 +84,7 @@
     width: 50%;
     height: 100%;
     z-index: 7;
+    margin-left: 355px;
     }
     @media (max-width: 700px) { 
     .navbar {
@@ -197,6 +203,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 95px;
+    overflow: hidden;
     }
     .left-control {
     height: 100%;
@@ -217,6 +224,26 @@
     width: 816px;
     display: flex;
     flex-direction: row;
+    transform: translate(0px, 0);
+    z-index: 1;
+    transition: transform 1.3s;
+    }
+    .blue_block-forMobile {
+    background-color: #648BF0;
+    width: 815px;
+    height: 50%;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    transform: translate(1023px, 0);
+    transition: transform 2s;
+    margin-top: -600px;
+    }
+    .blue_block-img {
+    position: absolute;
+    width: inherit;
+    height: 100%;
     }
     .left_mobile-container {
     height: 100%;
@@ -313,6 +340,9 @@
     .right_mobile-container {
     height: 100%;
     width: 505.91px;
+    margin-right: 134px;
+    margin-left: 95px;
+    margin-top: -1px;
     }
     .img-mob_one-r {
     position: absolute;
@@ -809,28 +839,28 @@
     .img-button_all {
     margin-top: 0.4%;
     border-radius: 6px 6px 6px 6px;
-    z-index: 5;
+    z-index: 3;
     cursor: pointer;
     }
     .img-button_webD {
     margin-top: 0.4%;
     margin-left: 1.1%;
     border-radius: 6px 6px 6px 6px;
-    z-index: 5;
+    z-index: 3;
     cursor: pointer;
     }
     .img-button_GD {
     margin-top: 0.4%;
     margin-left: 1.1%;
     border-radius: 6px 6px 6px 6px;
-    z-index: 5;
+    z-index: 3;
     cursor: pointer;
     }
     .img-button_artWork {
     margin-top: 0.4%;
     margin-left: 1.1%;
     border-radius: 6px 6px 6px 6px;
-    z-index: 5;
+    z-index: 3;
     cursor: pointer;
     }
     .button-text {
