@@ -14,6 +14,14 @@ const button_mob_one = document.getElementById('button-mob_one');
 const img_mob1 = document.getElementById('img_mob1');
 const button_mob_two = document.getElementById('button-mob_two');
 const img_mob2 = document.getElementById('img_mob2');
+const button_portfolio_tag = document.getElementById('button_portfolio_tag');
+const button_tag_all = document.getElementById('button_tag_all');
+const button_tag_webD = document.getElementById('button_tag_webD');
+const button_tag_GD = document.getElementById('button_tag_GD');
+const button_tag_artWork = document.getElementById('button_tag_artWork');
+const galleria_section_one = document.getElementById('galleria-section_one');
+const galleria_section_two = document.getElementById('galleria-section_two');
+const galleria_section_tree = document.getElementById('galleria-section_tree');
 document.documentElement.scrollTop =0;
 menu_navbar.addEventListener('click',(event)=>{ //меняется цвет текстa
     menu_navbar.querySelectorAll('li').forEach(el=>el.classList.remove('activeNav'));
@@ -121,7 +129,7 @@ right_control.onclick = function() {// при нажатии слайдер дв
 }
   
 let counter = 0 
-button_mob_one.onclick = function() { 
+button_mob_one.onclick = function() {  // при нажатии исчезает картинка на дисплее мобилки
 counter+=1
 if ( counter%2 == true ) {
  img_mob1.style.opacity = 0;
@@ -131,7 +139,8 @@ img_mob1.style.opacity = 1;
    }
 }
 let countertwo = 0 
-button_mob_two.onclick = function() { 
+button_mob_two.onclick = function() { // при нажатии исчезает картинка на дисплее мобилки
+    counter+=1
 countertwo+=1
 if ( countertwo%2 == true ) {
 img_mob2.style.opacity = 0;
@@ -139,4 +148,230 @@ img_mob2.style.opacity = 0;
 if ( countertwo%2 == false ) {
 img_mob2.style.opacity = 1;
    }
+}
+button_portfolio_tag.addEventListener('click',(event)=>{ //меняется цвет фона в кнопках portfolio
+    button_portfolio_tag.querySelectorAll('img').forEach(el=>el.classList.remove('button_active_portfotio'));
+    event.target.classList.add('button_active_portfotio');
+})
+
+
+const section_one_img_1 = document.getElementById('section_one_img_1');
+const section_one_img_2 = document.getElementById('section_one_img_2');
+const section_one_img_3 = document.getElementById('section_one_img_3');
+const section_one_img_4 = document.getElementById('section_one_img_4');
+const section_two_img_1 = document.getElementById('section_two_img_1');
+const section_two_img_2 = document.getElementById('section_two_img_2');
+const section_two_img_3 = document.getElementById('section_two_img_3');
+const section_two_img_4 = document.getElementById('section_two_img_4');
+const section_tree_img_1 = document.getElementById('section_tree_img_1');
+const section_tree_img_2 = document.getElementById('section_tree_img_2');
+const section_tree_img_3 = document.getElementById('section_tree_img_3');
+const section_tree_img_4 = document.getElementById('section_tree_img_4');
+let arr = [section_one_img_1,section_one_img_2,section_one_img_3,section_one_img_4,section_two_img_1,section_two_img_2, section_two_img_3, section_two_img_4,section_tree_img_1,section_tree_img_2,section_tree_img_3,section_tree_img_4] 
+let count = 0;
+let countcopy = 0;
+let countOn = 1;
+let countRev = 11;
+button_tag_all.onclick = function() { //кнопка в тег-баре Portfolio 'all'
+    arr[count].style.opacity=0;
+    function imgOpacity() {
+        arr[count].style.opacity=1;
+            }
+            setTimeout(imgOpacity, 800); 
+
+    for (let i = 0; i <500; i++) {
+function one() {
+arr[0].src = arr[11].src
+}
+setTimeout(one, 50);  
+function two() {
+arr[11].src = arr[10].src
+}
+setTimeout(two, 100); 
+function tree() {
+arr[10].src = arr[9].src
+}
+setTimeout(tree, 150); 
+function four() {
+arr[9].src = arr[8].src
+}
+setTimeout(four, 200); 
+function five() {
+arr[8].src = arr[7].src
+}
+setTimeout(five, 250); 
+function six() {
+arr[7].src = arr[6].src
+}
+setTimeout(six, 300); 
+function seven() {
+arr[6].src = arr[5].src
+}
+setTimeout(seven, 350); 
+function s8() {
+arr[5].src = arr[4].src
+}
+setTimeout(s8, 400); 
+function s9() {
+arr[4].src = arr[3].src
+}
+setTimeout(s9, 450); 
+function s10() {
+arr[3].src = arr[2].src
+}
+setTimeout(s10, 500); 
+function s11() {
+arr[2].src = arr[1].src
+}
+setTimeout(s11, 550); 
+function s12() {
+arr[1].src = arr[0].src
+}
+setTimeout(s12, 600); 
+        break
+    }
+}
+button_tag_webD.onclick = function() { //кнопка в тег-баре Portfolio 'Web Design'
+    arr[count].style.opacity=0;
+    function imgOpacity() {
+        arr[count].style.opacity=1;
+            }
+            setTimeout(imgOpacity, 800); 
+    for (let i = 0; i <500; i++) {
+function one() {
+arr[11].src = arr[0].src
+}
+setTimeout(one, 50);  
+function two() {
+arr[0].src = arr[1].src
+}
+setTimeout(two, 100); 
+function tree() {
+arr[1].src = arr[2].src
+}
+setTimeout(tree, 150); 
+function four() {
+arr[2].src = arr[3].src
+}
+setTimeout(four, 200); 
+function five() {
+arr[3].src = arr[4].src
+}
+setTimeout(five, 250); 
+function six() {
+arr[4].src = arr[5].src
+}
+setTimeout(six, 300); 
+function seven() {
+arr[5].src = arr[6].src
+}
+setTimeout(seven, 350); 
+function s8() {
+arr[6].src = arr[7].src
+}
+setTimeout(s8, 400); 
+function s9() {
+arr[7].src = arr[8].src
+}
+setTimeout(s9, 450); 
+function s10() {
+arr[8].src = arr[9].src
+}
+setTimeout(s10, 500); 
+function s11() {
+arr[9].src = arr[10].src
+}
+setTimeout(s11, 550); 
+function s12() {
+arr[10].src = arr[11].src
+}
+setTimeout(s12, 600); 
+        break
+    }
+
+
+}
+button_tag_GD.onclick = function() { //кнопка в тег-баре Portfolio 'Graphic Design'
+
+galleria_section_one.style.opacity = 0
+galleria_section_two.style.opacity = 0
+galleria_section_tree.style.opacity = 0
+function GD() {
+galleria_section_one.style.opacity = 1
+galleria_section_two.style.opacity = 1
+galleria_section_tree.style.opacity = 1
+}
+setTimeout(GD, 600);
+if ( countertwo%2 == true ) {
+galleria_section_one.style.flexDirection = 'row'
+galleria_section_two.style.flexDirection = 'row'
+galleria_section_tree.style.flexDirection = 'row'
+arr[8].style.marginRight = '2.1%'
+arr[9].style.marginRight = '2%'
+arr[10].style.marginRight = '0.3%'
+arr[11].style.marginLeft = '1.7%'
+}
+if ( countertwo%2 == false ) {
+    galleria_section_one.style.flexDirection = 'row-reverse'
+    galleria_section_two.style.flexDirection = 'row-reverse'
+    galleria_section_tree.style.flexDirection = 'row-reverse'
+    arr[8].style.margin = 'auto'
+    arr[9].style.margin = 'auto'
+    arr[10].style.margin = 'auto'
+    arr[11].style.margin = 'auto'
+    }
+
+countertwo++
+}
+button_tag_artWork.onclick = function() { //кнопка в тег-баре Portfolio 'Artwork'
+    galleria_section_one.style.opacity = 0;
+    galleria_section_two.style.opacity = 0;
+    galleria_section_tree.style.opacity = 0;
+    function artWorkOpacity() {
+        galleria_section_one.style.opacity = 1;
+        galleria_section_two.style.opacity = 1;
+        galleria_section_tree.style.opacity = 1;
+        }
+        setTimeout(artWorkOpacity, 600); 
+setTimeout(artWork, 600);
+function artWork() {
+if ( countertwo%2 == true ) {
+    galleria_section_one.children[0].src = galleria_section_two.children[0].src
+    galleria_section_two.children[0].src = galleria_section_tree.children[0].src
+    
+    galleria_section_one.children[1].src = galleria_section_two.children[1].src
+    galleria_section_two.children[1].src = galleria_section_tree.children[1].src
+    
+    galleria_section_one.children[2].src = galleria_section_two.children[2].src
+    galleria_section_two.children[2].src = galleria_section_tree.children[2].src
+    
+    galleria_section_one.children[3].src = galleria_section_two.children[3].src
+    galleria_section_two.children[3].src = galleria_section_tree.children[3].src
+    
+    galleria_section_one.children[4].src = galleria_section_two.children[4].src
+    galleria_section_two.children[4].src = galleria_section_tree.children[4].src
+}
+if ( countertwo%2 == false ) {
+    galleria_section_one.children[0].src =  galleria_section_one.children[0].src 
+    galleria_section_two.children[0].src =  galleria_section_two.children[0].src
+    
+    galleria_section_tree.children[0].src = galleria_section_tree.children[0].src
+    galleria_section_one.children[1].src = galleria_section_one.children[1].src
+    
+    galleria_section_two.children[1].src = galleria_section_two.children[1].src
+    galleria_section_tree.children[1].src = galleria_section_tree.children[1].src
+    
+    galleria_section_one.children[2].src = galleria_section_one.children[2].src
+    galleria_section_two.children[2].src = galleria_section_two.children[2].src
+    
+    galleria_section_tree.children[2].src = galleria_section_tree.children[2].src
+    galleria_section_one.children[3].src = galleria_section_one.children[3].src
+    galleria_section_two.children[3].src = galleria_section_two.children[3].src
+    galleria_section_tree.children[3].src = galleria_section_tree.children[3].src
+    galleria_section_one.children[4].src = galleria_section_one.children[4].src
+    galleria_section_two.children[4].src = galleria_section_two.children[4].src
+    galleria_section_tree.children[4].src = galleria_section_tree.children[4].src
+    }
+}
+countertwo++
 }
