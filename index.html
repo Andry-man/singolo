@@ -238,13 +238,19 @@
                 </div>
                 <div class="form_and_Info">
         <div class="block-form">
-        <form action="server.html" id="auth">
-            <p><input  class="input_name" required placeholder="Name (Required)" name="name" pattern="^[a-z0-9_-]{3,15}$"></p>
-            <p ><input class="input_email" required placeholder="Email (Required)" name="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"></p>
-            <p ><input class="input_text" required placeholder="Subject" name="text" maxlength="15"></p>
-            <p ><TEXTAREA class="input_textarea"  name="name" ROWS=10 COLS=20 WRAP=VIRTUAL placeholder="Describe your project in detail..."></TEXTAREA></p>
-            <p><button class="button-form" type="submit" form="auth">Submit</button> </p>  
+        <form id="form">
+            <p><input id="input_name"  class="input_name" required placeholder="Name (Required)" name="name"></p>
+            <p ><input id="input_email" class="input_email" required placeholder="Email (Required)" name="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"></p>
+            <p ><input id="input_subject" class="input_text" required placeholder="Subject" name="text" maxlength="15"></p>
+            <p ><TEXTAREA  id="input_textarea" class="input_textarea"  name="name" ROWS=10 COLS=20 WRAP=VIRTUAL placeholder="Describe your project in detail..."></TEXTAREA></p>
+            <p><button id="button_form" class="button-form" >Submit</button></p>  
             </form>
+            <div id="message-block" class="message-block">
+                <span class="span-massage">Письмо отправлено!</span>
+                <span class="span-subject" id="span_subject">Без темы.</span>
+                <span class="span-textarea" id="span_textarea">Без описания.</span>
+            <button id="message-block_ok" class="button_message-block" >ok</button> 
+            </div>
         </div>
         <div class="block-info">
         <div class="contact_block-one"><p class="block-one_text-one">Contact Information</p></div>

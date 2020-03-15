@@ -391,5 +391,33 @@ galleria_section_tree.addEventListener('click',(event)=>{ //рамка для к
     galleria_section_tree.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
     event.target.classList.add('img_border');
 })
+const input_name = document.getElementById('input_name');
+const input_email = document.getElementById('input_email');
+const input_subject = document.getElementById('input_subject');
+const input_textarea = document.getElementById('input_textarea');
+const button_form = document.getElementById('button_form');
+const span_subject = document.getElementById('span_subject');
+const span_textarea = document.getElementById('span_textarea');
+const message_block_ok = document.getElementById('message-block_ok');
+const message_block = document.getElementById('message-block');
+let name = input_name;
+button_form.onclick = function() { 
 
-
+if (input_subject.value["length"] != 0) {
+span_subject.innerHTML = `Тема:${input_subject.value}`
+}
+if (input_subject.value["length"] = 0) {
+span_subject.innerHTML = `Без темы`
+}
+if (input_textarea.value["length"] !=0) {
+span_textarea.innerHTML = `Описание:${input_textarea.value}`
+}
+if (input_textarea.value["length"] = 0) {
+span_textarea.innerHTML = `Без описания`
+}
+event.preventDefault()
+message_block.style.display = 'block'
+}
+message_block_ok.onclick = function() { 
+    message_block.style.display = 'none'
+    }
