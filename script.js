@@ -153,8 +153,6 @@ button_portfolio_tag.addEventListener('click',(event)=>{ //меняется цв
     button_portfolio_tag.querySelectorAll('img').forEach(el=>el.classList.remove('button_active_portfotio'));
     event.target.classList.add('button_active_portfotio');
 })
-
-
 const section_one_img_1 = document.getElementById('section_one_img_1');
 const section_one_img_2 = document.getElementById('section_one_img_2');
 const section_one_img_3 = document.getElementById('section_one_img_3');
@@ -375,3 +373,23 @@ if ( countertwo%2 == false ) {
 }
 countertwo++
 }
+galleria_section_one.addEventListener('click',(event)=>{ //рамка для картинок первого блока 
+    galleria_section_one.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
+    galleria_section_two.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
+    galleria_section_tree.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
+    event.target.classList.add('img_border');
+})
+galleria_section_two.addEventListener('click',(event)=>{ //рамка для картинок второго блока 
+    galleria_section_one.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
+    galleria_section_two.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
+    galleria_section_tree.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
+    event.target.classList.add('img_border');
+})
+galleria_section_tree.addEventListener('click',(event)=>{ //рамка для картинок 3-го блока 
+    galleria_section_one.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
+    galleria_section_two.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
+    galleria_section_tree.querySelectorAll('img').forEach(el=>el.classList.remove('img_border'));
+    event.target.classList.add('img_border');
+})
+
+

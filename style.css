@@ -1023,7 +1023,6 @@
     margin: 0.5% auto auto auto;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     opacity: 1;
     transition: opacity 1.3s;
     }
@@ -1034,7 +1033,6 @@
     margin: 0.5% auto auto auto;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     }
     }
     .section-one-img1 {
@@ -1107,7 +1105,6 @@
     margin: 1.93% auto auto auto;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     opacity: 1;
     transition: opacity 1.3s;
     }
@@ -1118,10 +1115,12 @@
     margin: 1.93% auto auto auto;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     opacity: 1;
     transition: opacity 1.3s;
     }
+    }
+    .img_border {
+    border: 5px solid #F06C64;
     }
     .section-two-img0 {
     margin: auto auto auto 0px;
@@ -1194,7 +1193,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    overflow: hidden;
     opacity: 1;
     transition: opacity 1.3s;
     }
@@ -1206,7 +1204,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    overflow: hidden;
     opacity: 1;
     transition: opacity 1.3s;
     }
