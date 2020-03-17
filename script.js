@@ -67,65 +67,130 @@ button_contact.onclick = function() {
 }
 var matrix = [main_info,blue_block];
 left_control.onclick = function() {// при нажатии слайдер двигается
-    if (matrix[0] == blue_block ) {
-        blue_block.style.transform = 'translate(-835px, 0)'
-        main_info.style.transform = 'translate(9925px, 0)'
-        function zMI() {
-            main_info.style.transform = 'translate(0px, 0)'
-            main_info.style.zIndex = 1;
-            }
-            setTimeout(zMI, 950); 
-            function zMIb() {
-                blue_block.style.zIndex = -1;
-                blue_block.style.transform = 'translate(5023px, 0)'
+    if ( document.documentElement.clientWidth <= 375) {
+        if (matrix[0] == blue_block ) {
+            blue_block.style.transform = 'translate(-835px, 0)'
+            main_info.style.transform = 'translate(9925px, 0)'
+            function zMI() {
+                main_info.style.transform = 'translate(0px, 0)'
+                main_info.style.zIndex = 1;
                 }
-            setTimeout(zMIb, 1500); 
-    }
-    if (matrix[0] == main_info ) {
-        blue_block.style.zIndex = 1;
-          main_info.style.transform = ('translate(-925px, 0)')
-          blue_block.style.transform = ('translate(102px, 0)')
-          setTimeout(zMIo, 1000);
-          function zMIo() {
-            main_info.style.zIndex = -1;
-            } 
-             
-      } 
-      matrix.reverse()
+                setTimeout(zMI, 950); 
+                function zMIb() {
+                    blue_block.style.zIndex = -1;
+                    blue_block.style.transform = 'translate(5023px, 0)'
+                    }
+                setTimeout(zMIb, 1500); 
+        }
+        if (matrix[0] == main_info ) {
+            blue_block.style.zIndex = 1;
+              main_info.style.transform = ('translate(-925px, 0)')
+              blue_block.style.transform = ('translate(45px, 0)')
+              setTimeout(zMIo, 1000);
+              function zMIo() {
+                main_info.style.zIndex = -1;
+                } 
+                 
+          } 
+          matrix.reverse()
+
+        }
+        if (document.documentElement.clientWidth != 375 ) {
+            if (matrix[0] == blue_block ) {
+                blue_block.style.transform = 'translate(-835px, 0)'
+                main_info.style.transform = 'translate(9925px, 0)'
+                function zMI() {
+                    main_info.style.transform = 'translate(0px, 0)'
+                    main_info.style.zIndex = 1;
+                    }
+                    setTimeout(zMI, 950); 
+                    function zMIb() {
+                        blue_block.style.zIndex = -1;
+                        blue_block.style.transform = 'translate(5023px, 0)'
+                        }
+                    setTimeout(zMIb, 1500); 
+            }
+            if (matrix[0] == main_info ) {
+                blue_block.style.zIndex = 1;
+                  main_info.style.transform = ('translate(-925px, 0)')
+                  blue_block.style.transform = ('translate(102px, 0)')
+                  setTimeout(zMIo, 1000);
+                  function zMIo() {
+                    main_info.style.zIndex = -1;
+                    } 
+                     
+              } 
+              matrix.reverse()
+        }
 }
 right_control.onclick = function() {// при нажатии слайдер двигается
-    if (matrix[0] == blue_block ) {
-        blue_block.style.transform = 'translate(1835px, 0)'
-        main_info.style.transform = 'translate(-5925px, 0)'
-        function zMI() {
-            main_info.style.transform = 'translate(0px, 0)'
-            main_info.style.zIndex = 1;
-            }
-            setTimeout(zMI, 1020); 
-            function zMIb() {
-                blue_block.style.zIndex = -1;
-                blue_block.style.transform = 'translate(5023px, 0)'
+    if (document.documentElement.clientWidth != 375) {
+        if (matrix[0] == main_info ) {
+            blue_block.style.zIndex = -1;
+              main_info.style.transform = ('translate(925px, 0)')
+              blue_block.style.transform = ('translate(-1000px, 0)')
+              setTimeout(zMIo, 700);
+              function zMIo() {
+                main_info.style.zIndex = -1;
                 }
-            setTimeout(zMIb, 1000); 
-
+                setTimeout(zMIob, 900);
+                blue_block.style.transform = 'translate(-7825px,0)'
+                function zMIob() {
+                    blue_block.style.zIndex = 1;
+                    blue_block.style.transform = 'translate(103px,0)'
+                    } 
+                 
+          } 
+        if (matrix[0] == blue_block ) {
+            blue_block.style.transform = 'translate(1835px, 0)'
+            main_info.style.transform = 'translate(-4450px, 0)'
+            function zMI() {
+                main_info.style.transform = 'translate(0px, 0)'
+                main_info.style.zIndex = 1;
+                }
+                setTimeout(zMI, 1020); 
+                function zMIb() {
+                    blue_block.style.zIndex = -1;
+                    blue_block.style.transform = 'translate(103px, 0)'
+                    }
+                setTimeout(zMIb, 1000); 
+        }
+          matrix.reverse()
     }
-    if (matrix[0] == main_info ) {
-        blue_block.style.zIndex = -1;
-          main_info.style.transform = ('translate(925px, 0)')
-          blue_block.style.transform = ('translate(-1000px, 0)')
-          setTimeout(zMIo, 700);
-          function zMIo() {
-            main_info.style.zIndex = -1;
-            }
-            setTimeout(zMIob, 800);
-            blue_block.style.transform = 'translate(-7825px, 0)'
-            function zMIob() {
-                blue_block.style.zIndex = 1;
-                blue_block.style.transform = 'translate(103px,0)'
-                } 
-             
-      } 
-      matrix.reverse()
+
+    if (document.documentElement.clientWidth == 375) {
+        if (matrix[0] == blue_block ) {
+            blue_block.style.transform = 'translate(1835px, 0)'
+            main_info.style.transform = 'translate(-5925px, 0)'
+            function zMI() {
+                main_info.style.transform = 'translate(0px, 0)'
+                main_info.style.zIndex = 1;
+                }
+                setTimeout(zMI, 1020); 
+                function zMIb() {
+                    blue_block.style.zIndex = -1;
+                    blue_block.style.transform = 'translate(5023px, 0)'
+                    }
+                setTimeout(zMIb, 1000); 
+        }
+        if (matrix[0] == main_info ) {
+            blue_block.style.zIndex = -1;
+              main_info.style.transform = ('translate(925px, 0)')
+              blue_block.style.transform = ('translate(-1000px, 0)')
+              setTimeout(zMIo, 700);
+              function zMIo() {
+                main_info.style.zIndex = -1;
+                }
+                setTimeout(zMIob, 800);
+                blue_block.style.transform = 'translate(-7825px, 0)'
+                function zMIob() {
+                    blue_block.style.zIndex = 1;
+                    blue_block.style.transform = 'translate(45px,0)'
+                    } 
+                 
+          } 
+          matrix.reverse()
+    }
 }
   
 let counter = 0 
@@ -421,3 +486,17 @@ message_block.style.display = 'block'
 message_block_ok.onclick = function() { 
     message_block.style.display = 'none'
     }
+
+const burger_menu_button = document.getElementById('burger_menu_button');
+const header_container = document.getElementById('header_container');
+burger_menu_button.onclick = function() { 
+counter+=1
+if ( counter%2 == true ) {
+    burger_menu_button.style.transform = 'rotate(-90deg)'
+    header_container.style.transform = 'translate(0px, 0)'
+}
+if ( counter%2 == false ) {
+    burger_menu_button.style.transform = 'rotate(0deg)'
+    header_container.style.transform = 'translate(-270px, 0)'
+   }
+}
