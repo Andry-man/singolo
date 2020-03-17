@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +10,35 @@
     <title>Singolo</title>
 </head>
 <body>
+    
     <div class="wrapper">
         <header class="header">
-        <div class="header_container">
+            <div class="logo_mob">
+                <div id="burger_menu_button" class="burger-menu">
+                  <span class="line-one">|</span>
+                  <span class="line-two">|</span>
+                  <span class="line-tree">|</span>
+                </div>
+                <a href="index.html" class="link" ><h1 class="text_logo-mob">SINGOLO<span class="text_logo-one">*</span></h1></a>
+                </div>
+        <div id="header_container" class="header_container">
         <div class="logo">
-        <a href="singolo1.html" class="link" ><h1 class="text_logo">SINGOLO<span class="text_logo-one">*</span></h1></a>
+        <a href="index.html" class="link" ><h1 class="text_logo">SINGOLO<span class="text_logo-one">*</span></h1></a>
         </div>
         <nav class="navbar">
-        <ul class="navbar_container">
-        <li class="list-home">home <span class="text_element-1">·</span></li>
-        <li class="list-services">services <span class="text_element-2">·</span></li>
-        <li class="list-portfolio">portfolio <span class="text_element-3">·</span></li>
-        <li class="list-about">about <span class="text_element-4">·</span></li>
-        <li class="list-contact">contact</li>
+        <ul class="navbar_container" id="menu_navbar">
+        <li class="list-home activeNav" id="button-home" >home<span class="text_element-1">·</span></li>
+        <li class="list-services" id="button-services">services<span class="text_element-2">·</span></li>
+        <li class="list-portfolio" id="button-portfolio">portfolio<span class="text_element-3">·</span></li>
+        <li class="list-about" id="button-about">about<span class="text_element-4">·</span></li>
+        <li class="list-contact" id="button-contact">contact</li>
         </ul>
         </nav>
         </div>
         </header>
-        <main class="main">
-        <div class="left-control"><img class="left_control-img" src="./assets/image/left_control.png" alt="image"></div>
-        <div class="main-info">
+        <main id="main_block" class="main">
+        <div class="left-control" id="left-control"><img class="left_control-img" src="./assets/image/left_control.png" alt="image"></div>
+        <div class="main-info" id="main-info">
         <div class="left_mobile-container">
         <img class="img-mob_one" src="./assets/image/mob1.png" alt="image-mobile">
         <img class="img-mob_two" src="./assets/image/mob2.png" alt="image-mobile">
@@ -38,8 +47,10 @@
         <img class="img-mob_five" src="./assets/image/mob5.png" alt="image-mobile">
         <img class="img-mob_six" src="./assets/image/mob6.png" alt="image-mobile">
         <img class="img-mob_seven" src="./assets/image/mob7.png" alt="image-mobile">
-        <div class="container_img-eight"><img class="img-mob_eight" src="./assets/image/mob8.png" alt="image-mobile"></div>
-        </div>
+        <img class="img-mob_mobile" src="./assets/image/Slider375.png" alt="image-mobile">
+        <div class="container_img-eight"><img class="img-mob_eight" id="img_mob1" src="./assets/image/mob8.png" alt="image-mobile"></div>
+        <a class="ghost-button" id="button-mob_one" href="#"></a>
+    </div>
         <div class="right_mobile-container">
             <img class="img-mob_one-r" src="./assets/image/mob1.png" alt="image-mobile">
             <img class="img-mob_two-r" src="./assets/image/mob2.png" alt="image-mobile">
@@ -48,12 +59,14 @@
             <img class="img-mob_five-r" src="./assets/image/mob5.png" alt="image-mobile">
             <img class="img-mob_six-r" src="./assets/image/mob6.png" alt="image-mobile">
             <img class="img-mob_seven-r" src="./assets/image/mob7.png" alt="image-mobile">
-            <div class="container_img-eight-r"><img class="img-mob_eight-r" src="./assets/image/mob8r.png" alt="image-mobile"></div>
+            <div class="container_img-eight-r"><img class="img-mob_eight-r" id="img_mob2" src="./assets/image/mob8r.png" alt="image-mobile"></div>
+            <a class="ghost-button-two" id="button-mob_two" href="#"></a>
         </div>
         </div>
-        <div class="right-control"><img class="right_control-img" src="./assets/image/right_control.png" alt="image"></div>
-        </main>
-        <div class="block_shadow"></div>
+        <div class="right-control" id="right-control"><img class="right_control-img" src="./assets/image/right_control.png" alt="image"></div>
+        </main>       
+        <div class="blue_block-forMobile" id="blue_block"><img class="blue_block-img" src="./assets/image/bg.png" alt="img"></div>
+         <div class="block_shadow"></div>
         <div class="our_services_bloc">
             <div class="services_block-one">
             <div class="services-one"><p class="services-text_one">Our Services</p></div>
@@ -63,11 +76,11 @@
                 <section class="block-two_container-one">   
                     <div class="container-one_block-one">
                         <div class="block-one_container-one"><img class="img-logo" src="./assets/image/pen.svg" alt="img-pen"></div>
-                        <div class="block-one_container-two"><p class="container-two_text-one">Custom Design</p> <p class="container-two_text-two">Curabitur vestibulum eget mauris quis <br> laoreet. Phasellus in quam laoreet, viverra <br> lacus ut, ultrices velit.</p> </div>
+                        <div class="block-one_container-two"><p class="container-two_text-one">Custom Design</p> <p class="container-two_text-two">Curabitur&nbsp;&nbsp; vestibulum&nbsp;&nbsp; eget&nbsp;&nbsp; mauris&nbsp;&nbsp; quis <br> laoreet. Phasellus in quam laoreet, viverra <br> lacus ut, ultrices velit.</p> </div>
                     </div>
                     <div class="container-one_block-two">
                         <div class="block_two-container-one"><img class="img-logo-two" src="./assets/image/lightbulb.svg" alt="img-pen"></div>
-                        <div class="block_two-container-two"><p class="ideas-text_one">Inovative Ideas</p>   <p class="ideas-text_two">Quisque luctus, quam eget molestie com- <br> modo,&nbsp; lacus &nbsp;purus&nbsp; cursus &nbsp;purus,&nbsp; nec <br> rutrum tellus dolor id lorem.</p>  </div>
+                        <div class="block_two-container-two"><p class="ideas-text_one">Inovative Ideas</p>   <p class="ideas-text_two">Quisque luctus, quam eget molestie com- <br> modo,&nbsp;&nbsp; lacus &nbsp;&nbsp;&nbsp;purus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cursus &nbsp;purus,&nbsp; nec <br> rutrum tellus dolor id lorem.</p>  </div>
                     </div>
                     <div class="container-one_block-tree">
                         <div class="block-tree_container-one"><img class="img-logo-tree" src="./assets/image/heart.svg" alt="img-logo">
@@ -81,7 +94,7 @@
                     <img class="img-phone" src="./assets/image/phone.svg" alt="phone-img">
                     </div>
                     <div class="block-one-container-two">
-                        <p class="block_one-text-one">Responsive Layout</p> <p class="block_one-text-two">Sed porttitor placerat rhoncus. In at nunc <br> tellus. Maecenas blandit nunc ligula. Prae - <br> sent elit leo.</p>
+                        <p class="block_one-text-one">Responsive Layout</p> <p class="block_one-text-two">Sed porttitor placerat rhoncus.In at nunc <br> tellus.Maecenas blandit nunc ligula.Prae - <br> sent elit leo.</p>
                     </div>
                     </div>
                     <div class="container-two_block-two"> 
@@ -89,7 +102,7 @@
                         <img class="img-bubble" src="./assets/image/bubble.svg" alt="bubble-img">
                         </div>
                         <div class="block-two-container-two">
-                            <p class="block-two_text-one">24 / 7 Support</p>  <p class="block-two_text-two">Vivamus vel quam lacinia, tincidunt dui <br> non, vehicula nisi. Nulla a sem erat. Pellent- <br> esque egestas venenatis lorem .</p>
+                            <p class="block-two_text-one">24 / 7 Support</p>  <p class="block-two_text-two">Vivamus vel &nbsp; &nbsp;quam&nbsp; lacinia, tincidunt dui <br> non, vehicula nisi.Nulla a sem erat. Pellent- <br> esque egestas venenatis lorem .</p>
                         </div>
                     </div>
                     <div class="container-two_block-tree"> 
@@ -117,11 +130,11 @@
             <div class="tex-two_container"> 
                 <p class="text-two_text">Duis mollis, est non commodo luctus,</p><span class="text-two_text2">nisi erat porttitor ligula, eget lacinia odio sem nec elit.</span>
             </div>
-            <div class="tag-area">
-            <img class="img-button_all" src="./assets/image/Button-all.png" alt="img">
-            <img class="img-button_webD" src="./assets/image/Button-webDez.png" alt="img">
-            <img class="img-button_GD" src="./assets/image/Button-gd.png" alt="img">
-            <img class="img-button_artWork" src="./assets/image/Button-artwork.png" alt="img">
+            <div class="tag-area" id="button_portfolio_tag">
+            <img class="img-button_all" id="button_tag_all" src="./assets/image/Button-all.png" alt="img">
+            <img class="img-button_webD" id="button_tag_webD" src="./assets/image/Button-webDez.png" alt="img">
+            <img class="img-button_GD" id="button_tag_GD" src="./assets/image/Button-gd.png" alt="img">
+            <img class="img-button_artWork" id="button_tag_artWork" src="./assets/image/Button-artwork.png" alt="img">
             </div>
             <div class="button-text">
                 <div class="button-wrapper">  
@@ -141,23 +154,23 @@
             </div>
             </div>
             <div class="galleria">
-                <div class="galleria-section_one">
-                    <img class="section-one-img1" src="./assets/image/section-one-img1.png" alt="img">
-                    <img class="section-one-img2" src="./assets/image/section-one-img2.png" alt="img">
-                    <img class="section-one-img3" src="./assets/image/section-one-img3.png" alt="img">
-                    <img class="section-one-img4" src="./assets/image/section-one-img4.png" alt="img">
+                <div class="galleria-section_one" id="galleria-section_one">
+                    <img class="section-one-img1" id="section_one_img_1" src="./assets/image/section-one-img1.png" alt="img">
+                    <img class="section-one-img2" id="section_one_img_2" src="./assets/image/section-one-img2.png" alt="img">
+                    <img class="section-one-img3" id="section_one_img_3" src="./assets/image/section-one-img3.png" alt="img">
+                    <img class="section-one-img4" id="section_one_img_4" src="./assets/image/section-one-img4.png" alt="img">
                 </div>
-                <div class="galleria-section_two">
-                    <img class="section-two-img0" src="./assets/image/section-two-img0.png" alt="img">
-                    <img class="section-two-img1" src="./assets/image/section-two-img1.png" alt="img">
-                    <img class="section-two-img2" src="./assets/image/section-two-img2.png" alt="img">
-                    <img class="section-two-img3" src="./assets/image/section-two-img3.png" alt="img">
+                <div class="galleria-section_two" id="galleria-section_two">
+                    <img class="section-two-img0" id="section_two_img_1" src="./assets/image/section-two-img0.png" alt="img">
+                    <img class="section-two-img1" id="section_two_img_2" src="./assets/image/section-two-img1.png" alt="img">
+                    <img class="section-two-img2" id="section_two_img_3" src="./assets/image/section-two-img2.png" alt="img">
+                    <img class="section-two-img3" id="section_two_img_4" src="./assets/image/section-two-img3.png" alt="img">
                 </div>
-                <div class="galleria-section_tree">
-                    <img class="section-tree-img1" src="./assets/image/section-tree-img1.png" alt="img">
-                    <img class="section-tree-img2" src="./assets/image/section-tree-img2.png" alt="img">
-                    <img class="section-tree-img3" src="./assets/image/section-tree-img3.png" alt="img">
-                    <img class="section-tree-img4" src="./assets/image/section-tree-img4.png" alt="img">
+                <div class="galleria-section_tree" id="galleria-section_tree">
+                    <img class="section-tree-img1" id="section_tree_img_1" src="./assets/image/section-tree-img1.png" alt="img">
+                    <img class="section-tree-img2" id="section_tree_img_2" src="./assets/image/section-tree-img2.png" alt="img">
+                    <img class="section-tree-img3" id="section_tree_img_3" src="./assets/image/section-tree-img3.png" alt="img">
+                    <img class="section-tree-img4" id="section_tree_img_4" src="./assets/image/section-tree-img4.png" alt="img">
                 </div>
             </div>
             </div>
@@ -234,13 +247,19 @@
                 </div>
                 <div class="form_and_Info">
         <div class="block-form">
-        <form action="server.html" id="auth">
-            <p><input  class="input_name" required placeholder="Name (Required)" name="name" pattern="^[a-z0-9_-]{3,15}$"></p>
-            <p ><input class="input_email" required placeholder="Email (Required)" name="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"></p>
-            <p ><input class="input_text" required placeholder="Subject" name="text" maxlength="15"></p>
-            <p ><TEXTAREA class="input_textarea"  name="name" ROWS=10 COLS=20 WRAP=VIRTUAL placeholder="Describe your project in detail..."></TEXTAREA></p>
-            <p><button class="button-form" type="submit" form="auth">Submit</button> </p>  
+        <form id="form">
+            <p><input id="input_name"  class="input_name" required placeholder="Name (Required)" name="name"></p>
+            <p ><input id="input_email" class="input_email" required placeholder="Email (Required)" name="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"></p>
+            <p ><input id="input_subject" class="input_text" required placeholder="Subject" name="text" maxlength="15"></p>
+            <p ><TEXTAREA  id="input_textarea" class="input_textarea"  name="name" ROWS=10 COLS=20 WRAP=VIRTUAL placeholder="Describe your project in detail..."></TEXTAREA></p>
+            <p><button id="button_form" class="button-form" >SEND</button></p>  
             </form>
+            <div id="message-block" class="message-block">
+                <span class="span-massage">Письмо отправлено!</span>
+                <span class="span-subject" id="span_subject">Без темы.</span>
+                <span class="span-textarea" id="span_textarea">Без описания.</span>
+            <button id="message-block_ok" class="button_message-block" >ok</button> 
+            </div>
         </div>
         <div class="block-info">
         <div class="contact_block-one"><p class="block-one_text-one">Contact Information</p></div>
@@ -273,5 +292,6 @@
             </footer>
             <div class="line"></div>
             </div>
+            <script src="script.js"></script>
 </body>
 </html>
