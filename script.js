@@ -71,6 +71,7 @@ left_control.onclick = function() {// при нажатии слайдер дв�
         if (matrix[0] == blue_block ) {
             blue_block.style.transform = 'translate(-835px, 0)'
             main_info.style.transform = 'translate(9925px, 0)'
+            main_block.style.backgroundColor = '#f06c64'
             function zMI() {
                 main_info.style.transform = 'translate(0px, 0)'
                 main_info.style.zIndex = 1;
@@ -85,7 +86,8 @@ left_control.onclick = function() {// при нажатии слайдер дв�
         if (matrix[0] == main_info ) {
             blue_block.style.zIndex = 1;
               main_info.style.transform = ('translate(-925px, 0)')
-              blue_block.style.transform = ('translate(45px, 0)')
+              main_block.style.backgroundColor = '#648bf0'
+              blue_block.style.transform = ('translate(66px, 0)')
               setTimeout(zMIo, 1000);
               function zMIo() {
                 main_info.style.zIndex = -1;
@@ -99,6 +101,7 @@ left_control.onclick = function() {// при нажатии слайдер дв�
             if (matrix[0] == blue_block ) {
                 blue_block.style.transform = 'translate(-835px, 0)'
                 main_info.style.transform = 'translate(9925px, 0)'
+                main_block.style.backgroundColor = '#f06c64'
                 function zMI() {
                     main_info.style.transform = 'translate(0px, 0)'
                     main_info.style.zIndex = 1;
@@ -113,6 +116,7 @@ left_control.onclick = function() {// при нажатии слайдер дв�
             if (matrix[0] == main_info ) {
                 blue_block.style.zIndex = 1;
                   main_info.style.transform = ('translate(-925px, 0)')
+                  main_block.style.backgroundColor = '#648bf0'
                   blue_block.style.transform = ('translate(102px, 0)')
                   setTimeout(zMIo, 1000);
                   function zMIo() {
@@ -129,6 +133,7 @@ right_control.onclick = function() {// при нажатии слайдер дв
             blue_block.style.zIndex = -1;
               main_info.style.transform = ('translate(925px, 0)')
               blue_block.style.transform = ('translate(-1000px, 0)')
+              main_block.style.backgroundColor = '#648bf0'
               setTimeout(zMIo, 700);
               function zMIo() {
                 main_info.style.zIndex = -1;
@@ -143,6 +148,7 @@ right_control.onclick = function() {// при нажатии слайдер дв
           } 
         if (matrix[0] == blue_block ) {
             blue_block.style.transform = 'translate(1835px, 0)'
+            main_block.style.backgroundColor = '#f06c64'
             main_info.style.transform = 'translate(-4450px, 0)'
             function zMI() {
                 main_info.style.transform = 'translate(0px, 0)'
@@ -162,6 +168,7 @@ right_control.onclick = function() {// при нажатии слайдер дв
         if (matrix[0] == blue_block ) {
             blue_block.style.transform = 'translate(1835px, 0)'
             main_info.style.transform = 'translate(-5925px, 0)'
+            main_block.style.backgroundColor = '#f06c64'
             function zMI() {
                 main_info.style.transform = 'translate(0px, 0)'
                 main_info.style.zIndex = 1;
@@ -176,6 +183,7 @@ right_control.onclick = function() {// при нажатии слайдер дв
         if (matrix[0] == main_info ) {
             blue_block.style.zIndex = -1;
               main_info.style.transform = ('translate(925px, 0)')
+              main_block.style.backgroundColor = '#648bf0'
               blue_block.style.transform = ('translate(-1000px, 0)')
               setTimeout(zMIo, 700);
               function zMIo() {
@@ -185,7 +193,7 @@ right_control.onclick = function() {// при нажатии слайдер дв
                 blue_block.style.transform = 'translate(-7825px, 0)'
                 function zMIob() {
                     blue_block.style.zIndex = 1;
-                    blue_block.style.transform = 'translate(45px,0)'
+                    blue_block.style.transform = 'translate(66px,0)'
                     } 
                  
           } 

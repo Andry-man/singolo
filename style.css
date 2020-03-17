@@ -193,6 +193,7 @@
                     z-index:20;
                     transform: rotate(0deg);
                     transition: transform 1.0s;
+                    overflow: hidden;
                     }
                     }
     @media (max-width: 375px) { 
@@ -471,6 +472,7 @@
     flex-direction: row;
     padding-top: 95px;
     overflow: hidden;
+    transition: background-color 1.4s;
     }
     @media (max-width: 768px) { 
     .main {
@@ -481,6 +483,7 @@
         flex-direction: row;
         padding-top: 95px;
         overflow: auto;
+        transition: background-color 1.4s;
         }
         }
     @media (max-width: 375px) { 
@@ -492,6 +495,7 @@
     flex-direction: row;
     padding-top: 0px;
     overflow: auto;
+    transition: background-color 1.4s;
     }
     }
 
@@ -504,7 +508,7 @@
     .left-control {
         height: 100%;
         width: 11%;
-        background-color: #bdbdbd6e;
+        background-color: #bdbdbd00;
         margin-left: 0px;
         margin-top: -95px;
     }
@@ -529,12 +533,14 @@
         width: 12%;
         background-color: #bdbdbd00;
         margin-top: 0px;
+        z-index: 18;
     }
     }
     .left-control:hover {
     height: 100%;
     width: 10%;
     background-color: #bdbdbd6e;
+    z-index: 18;
     }
     .left_control-img {
     padding-top: 281px;
@@ -633,6 +639,13 @@
     height: 100%;
     width: 310.08px;
     }
+    @media (max-width: 768px) { 
+        .left_mobile-container {
+            height: 100%;
+            width: 310.08px;
+            margin-left: -8px;
+            }
+        }
     .ghost-button {
     position: absolute;
     display: block;
@@ -958,7 +971,7 @@
     height: 100%;
     width: 505.91px;
     margin-right: 134px;
-    margin-left: 30px;
+    margin-left: 1px;
     margin-top: -1px;
     }
     }
@@ -1177,8 +1190,9 @@
         height: 100%;
         width: 11%;
         background-color: #bdbdbd00;
-        margin-left: 31px;
+        margin-left: -14px;
         margin-top: -95px;
+        z-index: 17;
     }
         }
         @media (max-width: 768px) { 
@@ -1186,8 +1200,9 @@
                 height: 100%;
                 width: 11%;
                 background-color: #bdbdbd00;
-                margin-left: 31px;
+                margin-left: -14px;
                 margin-top: -95px;
+                z-index: 17;
             }
                 }
     @media (max-width: 375px) { 
@@ -1231,6 +1246,15 @@
     height: 4px;
     margin-top: -4px;
     }
+    @media (max-width: 375px) { 
+        .block_shadow {
+            display: none;
+            width: 100%;
+            background-color: #ea676b;
+            height: 4px;
+            margin-top: -4px;
+            }
+            }
     .our_services_bloc {
     background-color: #f2f2f2;
     width: 100%;
