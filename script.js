@@ -492,7 +492,7 @@ event.preventDefault()
 message_block.style.display = 'block'
 }
 message_block_ok.onclick = function() { 
-    message_block.style.display = 'none'
+message_block.style.display = 'none'
     }
 
 const burger_menu_button = document.getElementById('burger_menu_button');

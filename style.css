@@ -3308,31 +3308,25 @@
     @media (max-width: 375px) { 
         .button_message-block {
             width: 243px;
+            display: block;
             height: 62px;
             border-radius: 10px;
             background-color: #c2c3c0e8;
             margin-left: 78px;
             margin-top: 442px;
             }
-}        @media (max-width: 375px) { 
-    .button_message-block:active {
-        width: 243px;
-        height: 62px;
-        border-radius: 10px;
-        background-color: #c2c3c0e8;
-        margin-left: 78px;
-        margin-top: 442px;
-        }
-        }
+}   
+        @media (max-width: 1020px) { 
+            .button_message-block:active {
+                width: 129px;
+                height: 35px;
+                border-radius: 10px;
+                background-color: #757573e8;
+                margin-left: 455px;
+                margin-top: 442px;
+                }
+                }
 
-    .button_message-block:active {
-    width: 129px;
-    height: 35px;
-    border-radius: 10px;
-    background-color: #757573e8;
-    margin-left: 455px;
-    margin-top: 442px;
-    }
     .block-form {
         height: 100%;
     width: 67%;
