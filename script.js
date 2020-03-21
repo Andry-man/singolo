@@ -26,6 +26,10 @@ document.documentElement.scrollTop =0;
 menu_navbar.addEventListener('click',(event)=>{ //меняется цвет текстa
     menu_navbar.querySelectorAll('li').forEach(el=>el.classList.remove('activeNav'));
     event.target.classList.add('activeNav');
+    if (menu_navbar.classList.length == 2 ) {
+        menu_navbar.classList.remove('activeNav')
+    }
+    
 
 })
     document.addEventListener('scroll',()=>{ //при движении скролла переключается класс (меняется цвет текста)
@@ -506,6 +510,6 @@ if ( counter%2 == true ) {
 }
 if ( counter%2 == false ) {
     burger_menu_button.style.transform = 'rotate(0deg)'
-    header_container.style.transform = 'translate(-270px, 0)'
+    header_container.style.transform = 'translate(-470px, 0)'
    }
 }
