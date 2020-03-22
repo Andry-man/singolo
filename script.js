@@ -205,26 +205,24 @@ right_control.onclick = function() {// при нажатии слайдер дв
     }
 }
   
-let counter = 0 
+let counter = 1 
 button_mob_one.onclick = function() {  // при нажатии исчезает картинка на дисплее мобилки
 counter+=1
-if ( counter%2 == true ) {
- img_mob1.style.opacity = 0;
-}
 if ( counter%2 == false ) {
-img_mob1.style.opacity = 1;
+    button_mob_one.style.opacity = 1;
+   } else {
+    button_mob_one.style.opacity = 0;
    }
 }
-let countertwo = 0 
+let countertwo = 1
 button_mob_two.onclick = function() { // при нажатии исчезает картинка на дисплее мобилки
     counter+=1
 countertwo+=1
-if ( countertwo%2 == true ) {
-img_mob2.style.opacity = 0;
-}
 if ( countertwo%2 == false ) {
-img_mob2.style.opacity = 1;
-   }
+button_mob_two.style.opacity = 1;
+} else {
+button_mob_two.style.opacity = 0;
+}
 }
 button_portfolio_tag.addEventListener('click',(event)=>{ //меняется цвет фона в кнопках portfolio
     button_portfolio_tag.querySelectorAll('img').forEach(el=>el.classList.remove('button_active_portfotio'));
