@@ -2733,7 +2733,7 @@
     height: 727px;
     }
     }
-    @media (max-width: 375px) { 
+    @media (max-width: 741px) { 
     .about-us {
     display: block;
     width: 100%;
@@ -2750,7 +2750,7 @@
     width: 100%;
     height: auto;
     }
-    @media (max-width: 375px) { 
+    @media (max-width: 741px) { 
     .text-bar {
         width: 100%;
         height: 161px;
@@ -2761,7 +2761,7 @@
     height: 18%;
     padding-top: 6.8%;
     }
-    @media (max-width: 375px) { 
+    @media (max-width: 741px) { 
         .text-bar_container-1 {
             width: 100%;
             height: 18%;
@@ -2789,7 +2789,7 @@
     padding-top: 3.3%;
     }
 }
-    @media (max-width: 375px) { 
+    @media (max-width: 741px) { 
         .text-bar_container-2 {
         width: 100%;
         height: 56px;
@@ -2811,7 +2811,7 @@
             font-size: 1.114em;
             font-weight: 100;
             letter-spacing: 2px;
-            margin-top: -13px;
+            margin-top: -42px;
             width: 100%;
             }
         }
@@ -2872,7 +2872,7 @@
         flex-direction: row;
     }
     }
-    @media (max-width: 375px) { 
+    @media (max-width: 741px) { 
         .photo-colum {
             width: 100%;
             height: 88%;
@@ -2900,11 +2900,11 @@
     margin: auto;
     }
     }
-    @media (max-width: 375px) { 
+    @media (max-width: 741px) { 
         .person-one_block {
         background-color: #f2f2f2;
         height: 100%;
-        width: 87%;
+        width: fit-content;
         margin-right: 1.9%;
         display: flex;
         flex-direction: column;
@@ -2914,6 +2914,13 @@
     .one-person_photo {
     margin-top: 12%;
     }
+    @media (max-width: 741px) { 
+        .one-person_photo {
+            margin-top: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        }
     .one-person_name {
     width: 100%;
     height: 6%;
@@ -2940,6 +2947,12 @@
     height: auto;
     width: 100%;
     }
+    @media (max-width: 741px) { 
+        .person-img {
+            height: auto;
+            width: 93%;
+            }
+        }
     .two-person-photo {
     margin-top: 12%;
     }
@@ -3009,10 +3022,10 @@
     margin: auto;
     }
     }
-    @media (max-width: 375px) { 
+    @media (max-width: 741px) { 
         .person-two_block {
         height: 100%;
-        width: 87%;
+        width: fit-content;
         margin-right: 1.9%;
         display: flex;
         flex-direction: column;
@@ -3035,10 +3048,10 @@
     margin: auto;
     }
     }
-    @media (max-width: 375px) { 
+    @media (max-width: 741px) { 
         .person-tree_block {
         height: 100%;
-        width: 87%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         margin: auto;
