@@ -3557,18 +3557,6 @@
                     margin-top: 442px;
                     }
               }
-
-        @media (max-width: 1020px) { 
-            .button_message-block:active {
-                width: 129px;
-                height: 35px;
-                border-radius: 10px;
-                background-color: #757573e8;
-                margin-left: 455px;
-                margin-top: 442px;
-                }
-                }
-
     .block-form {
         height: 100%;
     width: 67%;
@@ -3678,7 +3666,7 @@
     color: rgb(0, 0, 0);
     background-color: #88140d;
     width: 100%;
-    height: 9vh;
+    height:40px;
     margin-top: 0%;
     font-weight: 600;
     margin-left: 0;
@@ -3717,9 +3705,10 @@
         @media (min-width: 310px) and (max-width: 555px) {
             .block-info {
                 height: 100%;
-                width: 100%;
+                width: auto;
                 display: flex;
-                margin-left: 0px;
+                margin-left: auto;
+                margin-right: auto;
                 margin-top: 38px;
                 flex-direction: column;
                     }
@@ -4047,15 +4036,15 @@
         margin-bottom: 8px;
     }
     .img-cont {
-    width: 37%;
+    width: auto;
     height: 56px;
-    margin-left: 63%;
+    margin-left: calc(100% - 188px);
     }
-    @media (max-width: 375px) { 
+    @media (min-width: 310px) and (max-width: 555px) {
         .img-cont {
-            width: 37%;
+            width: auto;
             height: 56px;
-            margin: auto;
+            margin-left: calc(100% - 158px);
             }
         }
     .container-img {
@@ -4071,6 +4060,6 @@
         @media (max-width: 375px) { 
             .container-img {
                 height: 100%;
-                width: 100%;
+                width: 70%;
                 }
             }
